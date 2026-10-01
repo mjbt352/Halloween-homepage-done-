@@ -1,0 +1,62 @@
+/* Base styles for the page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header layout */
+header {
+    border-bottom: 3px solid #f47421;
+    /* Halloween Orange border */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+header img {
+    float: left;
+    margin-right: 20px;
+    height: 80px;
+    /* Adjusts pumpkin size */
+}
+
+h1 {
+    color: #f47421;
+    margin: 0;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 1.2em;
+    margin: 5px 0 0 0;
+}
+
+/* Main Content elements */
+main {
+    clear: both;
+    /* Prevents text wrapping issues around the header image */
+}
+
+h3 {
+    color: #000000;
+    border-bottom: 1px solid #f47421;
+    padding-bottom: 5px;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+ul {
+    margin-top: 5px;
+}
+
+/* Footer layout */
+footer {
+    margin-top: 40px;
+    border-top: 3px solid #f47421;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    
