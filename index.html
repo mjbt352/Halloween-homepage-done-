@@ -6,37 +6,35 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- Wrap everything inside a wrapper div to center the page and create the border box -->
-    <div id="wrapper">
-        <header>
-            <img src="images/pumpkin.gif" alt="Pumpkin">
-            <h2>The Halloween Store</h2>
-            <h3>For the little Goblin in all of us!</h3>
-        </header>
+    <header>
+        <img src="images/pumpkin.gif" alt="Pumpkin">
+        <h2>The Halloween Store</h2>
+        <h3>For the little Goblin in all of us!</h3>
+    </header>
 
-        <main id="main_content">
-            <!-- Wrapped the 'W' in a span to apply the large drop-cap effect -->
-            <h1><span>W</span>elcome to my store!</h1>
-            <p>I started this web site because Halloween has always been my favorite holiday. But during the last year, I started selling some of my favorite Halloween products, and they've become quite a hit.</p>
-            <p>If you click on the Personal link, you can browse my favorite Halloween pictures, stories, and films. And if you join my email list, I will keep you up-to-date on all things Halloween.</p>
-            
-            <!-- Changed from 'Product categories' to 'Products' -->
-            <h2>Products</h2>
-            <ul>
-                <li><a href="props.html">Props</a></li>
-                <li><a href="costumes.html">Costumes</a></li>
-                <li><a href="special.html">Special Effects</a></li>
-                <li><a href="masks.html">Masks</a></li>
-            </ul>
+    <main id="main_content">
+        <h1><span>W</span>elcome to my store!</h1>
+        <p>I started this web site because Halloween has always been my favorite holiday. But during the last year, I started selling some of my favorite Halloween products, and they've become quite a hit.</p>
+        <p>If you click on the Personal link, you can browse my favorite Halloween pictures, stories, and films. And if you join my email list, I will keep you up-to-date on all things Halloween.</p>
+        
+        <!-- Fix 1: Changed heading back to match the target image text -->
+        <h2>Product categories</h2>
+        <ul>
+            <li><a href="props.html">Props</a></li>
+            <li><a href="costumes.html">Costumes</a></li>
+            <li><a href="special.html">Special Effects</a></li>
+            <li><a href="masks.html">Masks</a></li>
+        </ul>
 
+        <!-- Fix 2: Wrapped the guarantee section inside the required aside element -->
+        <aside>
             <h2>My guarantee</h2>
             <p>If you aren't completely satisfied with everything you buy from my site, you can return it for a full refund. <strong>No questions asked!</strong></p>
-        </main>
+        </aside>
+    </main>
 
-        <footer>
-            <!-- Removed the year '2026' to match the target image exactly -->
-            <p>&copy; Ben Murach</p>
-        </footer>
-    </div>
+    <footer>
+        <p>&copy; Ben Murach</p>
+    </footer>
 </body>
 </html>
