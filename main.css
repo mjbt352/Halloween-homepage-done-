@@ -21,7 +21,7 @@ body {
 header {
     border-bottom: 3px solid #000000;
     background: linear-gradient(45deg, #ffffff 0%, #ffa500 75%, #000000 100%);
-    padding: 20px 30px; 
+    padding: 10px 30px; 
 }
 
 header::after {
@@ -38,14 +38,16 @@ header img {
 header h2 {
     color: #000000;
     font-style: normal;
-    font-size: 2.2em;
-    margin: 0;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-top: 5px;
 }
 
 header h3 {
     font-size: 1.2em;
     font-style: normal;
-    margin: 5px 0 0 0;
+    font-weight: bold;
+    margin: 2px 0 5px 0;
 }
 
 #main_content {
@@ -96,7 +98,7 @@ header h3 {
 aside {
     background-color: #ffa500;
     border-radius: 15px;
-    padding: 20px;
+    padding: 15px 25px;
     margin: 20px 0;
 }
 
