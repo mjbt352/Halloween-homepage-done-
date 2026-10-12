@@ -1,4 +1,4 @@
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,21 +7,38 @@
 html {
     background-image: url("../images/bats.gif");
     background-repeat: repeat;
+    font-size: 100%;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
     width: 80%;
+    max-width: 1000px;
     margin: 0 auto;
-    border: 1px solid #000000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 0.0625em solid #000000;
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.5);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header img {
+    float: left;
+    margin-right: 1.25em;
+    min-width: 40px;
+}
+
+.product-week img {
+    max-width: 100%;
 }
 
 header {
-    border-bottom: 3px solid #000000;
+    border-bottom: 0.1875em solid #000000;
     background: linear-gradient(45deg, #ffffff 0%, #ffa500 75%, #000000 100%);
-    padding: 10px 30px; 
+    padding: 0.625em 3%;
 }
 
 header::after {
@@ -30,81 +47,98 @@ header::after {
     clear: both;
 }
 
-header img {
-    float: left;
-    margin-right: 20px;
-}
-
-header h2 {
+header h1 {
     color: #000000;
     font-style: normal;
     font-weight: bold;
     font-size: 2.5em;
-    margin-top: 5px;
+    margin-top: 0.2em;
 }
 
-header h3 {
+header h2 {
     font-size: 1.2em;
     font-style: normal;
     font-weight: bold;
-    margin: 2px 0 5px 0;
+    margin: 0.15em 0 0.4em 0;
 }
 
-#main_content {
-    padding: 0 30px;
+.content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4%;
+    padding: 0 3%;
 }
 
-#main_content h1 {
-    font-size: 1.5em;
-    margin-top: 20px;
+.sidebar-column {
+    flex: 1 1 25%;
+    margin-top: 1.25em;
 }
 
-#main_content h1 span {
-    font-size: 2.8em;
-    float: left;
-    line-height: 0.85em;
-    padding-right: 4px;
+.main-column {
+    flex: 2 1 65%;
+    margin-top: 1.25em;
 }
 
-#main_content h2 {
-    font-size: 1.2em;
-    margin-top: 20px;
+.sidebar-column ul {
+    list-style-type: square;
+    padding-left: 1.25em;
 }
 
-#main_content p {
-    line-height: 1.4em;
-    margin-bottom: 1em;
+.sidebar-column li {
+    margin-bottom: 0.35em;
 }
 
-#main_content ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-#main_content li {
-    margin-bottom: 5px;
-}
-
-#main_content a {
+.sidebar-column a {
     color: #ffa500;
     text-decoration: underline;
     font-weight: bold;
 }
 
-#main_content a:hover {
+.sidebar-column a:hover {
     text-decoration: none;
 }
 
-aside {
+.guarantee-box {
     background-color: #ffa500;
-    border-radius: 15px;
-    padding: 15px 25px;
-    margin: 20px 0;
+    border-radius: 0.9375em;
+    padding: 0.9375em 1.5625em;
+    margin: 1.25em 0;
+}
+
+.guarantee-box h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.main-column h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.6em;
+}
+
+.main-column p {
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
+
+.product-week h3 {
+    font-size: 1.2em;
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+.product-week a {
+    color: #ffa500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.product-week a:hover {
+    text-decoration: none;
 }
 
 footer {
-    border-top: 3px solid #000000;
-    padding: 15px 30px;
+    border-top: 0.1875em solid #000000;
+    padding: 0.9375em 3%;
     text-align: center;
     clear: both;
 }
